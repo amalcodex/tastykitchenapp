@@ -44,11 +44,9 @@ class Bottom extends Component {
   getRestaurant = async () => {
     this.setState({isLoading: true})
     const jwtToken = Cookies.get('jwt_token')
-    const {activeSort, limit, offset} = this.state
+    const {activeSort, limit, offset, activePage} = this.state
 
     const apiUrl = `https://apis.ccbp.in/restaurants-list?offset=${offset}&limit=${limit}&sort_by_rating=${activeSort}`
-    console.log(apiUrl)
-
     const options = {
       headers: {
         Authorization: `Bearer ${jwtToken}`,
@@ -79,27 +77,38 @@ class Bottom extends Component {
 
   onClickRightPage = () => {
     const {offset, activePage, pagination, limit} = this.state
-    if (activePage === 4) {
-      this.setState({activePage: 4})
+
+    if (activePage !== 4) {
+      this.setState(
+        prev => ({
+          offset: (prev.activePage + 1 - 1) * limit,
+          activePage: prev.activePage + 1,
+        }),
+        this.getRestaurant,
+      )
     } else {
-      this.setState(prev => ({
-        offset: prev.offset + 9,
-        activePage: prev.activePage + 1,
-      }))
-      this.getRestaurant()
+      this.setState({
+        activePage: 4,
+        offset: 21,
+      })
     }
   }
 
   onClickLeftPage = () => {
     const {offset, activePage, limit} = this.state
-    if (activePage === 1) {
-      this.setState({activePage: 1})
+    if (activePage !== 1) {
+      this.setState(
+        prev => ({
+          offset: (prev.activePage - 2) * limit,
+          activePage: prev.activePage - 1,
+        }),
+        this.getRestaurant,
+      )
     } else {
-      this.setState(prev => ({
-        offset: prev.offset - 9,
-        activePage: prev.activePage - 1,
-      }))
-      this.getRestaurant()
+      this.setState({
+        activePage: 1,
+        offset: 0,
+      })
     }
   }
 
@@ -115,7 +124,7 @@ class Bottom extends Component {
         <div className="container-one">
           {restaurantList.map(each => (
             <Link to={`/restaurant/${each.id}`} className="link" key={each.id}>
-              <li className="restaurant-container">
+              <div className="restaurant-container">
                 <div>
                   <img
                     src={each.imageUrl}
@@ -142,7 +151,7 @@ class Bottom extends Component {
                     </div>
                   </div>
                 </div>
-              </li>
+              </div>
             </Link>
           ))}
         </div>
@@ -170,7 +179,7 @@ class Bottom extends Component {
   )
 
   render() {
-    const {isLoading} = this.state
+    const {isLoading, activePage} = this.state
     return <>{isLoading ? this.renderLoader() : this.renderProductsList()}</>
   }
 }

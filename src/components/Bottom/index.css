@@ -5,7 +5,7 @@
   flex-wrap: wrap;
 }
 .restaurant-image {
-  height: 100px;
+  height: 120px;
   width: 160px;
   border-radius: 8px;
   display: flex;
@@ -14,7 +14,10 @@
   display: flex;
   margin-top: 20px;
   margin-right: 40px;
-  width: 460px;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .details {
   margin-left: 10px;
@@ -26,6 +29,7 @@
   font-size: 15px;
   color: #334155;
   justify-content: flex-start;
+  margin: 0px;
 }
 
 .type {
@@ -35,6 +39,7 @@
   font-size: 14px;
   color: #64748b;
   margin-bottom: 1px;
+  margin: 0px;
 }
 .rating {
   font-family: DM Sans;
@@ -58,6 +63,12 @@
   width: 100%;
   margin-top: 50px;
 }
+.res-name-container {
+  display: flex;
+  width: 100px;
+  white-space: normal;
+  flex-wrap: wrap;
+}
 @media screen and (max-width: 992px) {
   .container-one {
     flex-direction: column;
@@ -80,12 +91,12 @@
     margin-top: 20px;
     margin-right: 0px;
     margin: auto;
-    width: 0px;
   }
   .res-name-container {
     display: flex;
     width: 100px;
     white-space: normal;
+    flex-wrap: wrap;
   }
   .type {
     font-size: 11px;
