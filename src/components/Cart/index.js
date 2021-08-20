@@ -124,7 +124,7 @@ class Cart extends Component {
             />
           </div>
           <div className="price">
-            <p>
+            <p className="price-mob">
               <BiRupee />
               {valueJSON.split(',')[2]}.00
             </p>

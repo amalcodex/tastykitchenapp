@@ -26,6 +26,7 @@
   font-size: 8px;
   font-family: DM Sans;
   font-style: normal;
+  flex-wrap: wrap;
 }
 .item-costs {
   font-family: DM Sans;
@@ -76,6 +77,11 @@
     display: flex;
     flex-direction: column;
   }
+  .view-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
   .view-list-container {
     display: flex;
   }
@@ -86,7 +92,7 @@
   }
   .small-image {
     height: 100px;
-    width: 130px;
+    width: 110px;
   }
   .item-costs {
     font-size: 12px;
@@ -95,10 +101,13 @@
     font-size: 11px;
   }
   .item-namez {
-    font-size: 8px;
+    display: flex;
+    font-size: 5px;
+    white-space: normal;
   }
   .i-name {
     width: 200px;
     flex-wrap: wrap;
+    white-space: normal;
   }
 }
