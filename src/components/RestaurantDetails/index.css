@@ -1,0 +1,131 @@
+.top-banner {
+  background-color: #333333;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+}
+.top-details {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.res-image {
+  height: 240px;
+  width: 405px;
+  border-radius: 8px;
+}
+.res-name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.small-view {
+  display: flex;
+}
+.main-head-name {
+  font-family: 'Roboto';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: left;
+  color: #ffffff;
+  margin: 3px;
+}
+.cuisine {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 3px;
+}
+.location-res {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 3px;
+  margin-bottom: 10px;
+}
+.star-rating {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin: 4px;
+}
+.ruler {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.ratings-main {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: #e2e8f0 !important;
+}
+.cost-for-two {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: #e2e8f0;
+}
+.container-fix {
+  width: 80%;
+  margin: auto;
+}
+.container-loader {
+  width: 100%;
+  margin: auto;
+}
+@media screen and (max-width: 992px) {
+  .top-details {
+    width: 80%;
+  }
+  .top-banner {
+    padding: 10px;
+  }
+  .res-image {
+    border-radius: 200px;
+    width: 200px;
+    height: 200px;
+    margin-left: -89px;
+    margin-top: -10px;
+  }
+  .main-head-name {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: left;
+    color: #ffffff;
+    margin: 3px;
+  }
+  .cuisine {
+    font-size: 10px;
+  }
+  .location-res {
+    font-size: 10px;
+    color: #ffffff;
+  }
+  .star-rating {
+    font-size: 12px;
+  }
+  .cost-for-two {
+    font-size: 10px;
+  }
+  .ratings-main {
+    font-size: 10px;
+  }
+}

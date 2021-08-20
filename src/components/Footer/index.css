@@ -1,0 +1,52 @@
+.footer {
+  background-color: #0f172a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+.logo {
+  color: white;
+}
+
+.tasty {
+  display: flex;
+}
+.paragraph {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 10px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 0px;
+}
+
+.heads {
+  font-family: DM Sans;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+@media screen and (max-width: 992px) {
+  .paragraph {
+    font-size: 10px;
+  }
+  .heads {
+    font-size: 20px;
+  }
+  .logo {
+    color: white;
+  }
+  .tasty {
+    align-items: center;
+  }
+  .social-media {
+    height: 30px;
+    width: 30px;
+  }
+}

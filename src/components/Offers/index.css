@@ -1,0 +1,24 @@
+.carousal {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  align-items: center;
+  color: #334155;
+  font-family: Bree Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.common {
+  margin: 10px;
+}

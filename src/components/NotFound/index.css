@@ -1,0 +1,24 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  text-align: center;
+}
+.we-are {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  color: #475569;
+}
+.button-back-home {
+  background: #f7931e;
+  border-radius: 8px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: white;
+}

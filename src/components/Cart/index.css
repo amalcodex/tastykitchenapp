@@ -1,0 +1,238 @@
+.cart-images {
+  height: 100px;
+  width: 136px;
+  left: 213px;
+  top: 224px;
+  border-radius: 8px;
+}
+.cart-container {
+  width: 80%;
+  margin: auto;
+  border: 1px solid black;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: rgba(11, 105, 255, 0.1) #f9fbfe;
+  border: 1px solid rgba(11, 105, 255, 0.1);
+}
+.cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-cart-container {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.cart-ruler {
+  border: none;
+  border: 1px dashed #cbd2d9;
+}
+.cart-final {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.cart-fina {
+  display: flex;
+  justify-content: space-between;
+}
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffa412;
+}
+.button-cart {
+  color: white;
+  font-weight: bold;
+  background-color: #ffa412;
+  border: 2px solid white;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+.sub-main-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.quantity {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #475569;
+  display: flex;
+  align-items: center;
+}
+.quantity-two {
+  margin: 20px;
+}
+.cash {
+  display: flex;
+  align-items: center;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: right;
+  color: #3e4c59;
+}
+.place-order {
+  color: white;
+  font-weight: bold;
+  background-color: #ffa412;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 89%;
+}
+.cart-empty-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cart-empty-container-two {
+  width: 80%;
+  margin: auto;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.no-order {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  color: #1e293b;
+}
+.no-order-para {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  color: #64748b;
+}
+.no-order-button {
+  background: #f7931e;
+  padding: 10px;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.main-toggle-container {
+  display: none;
+}
+.payment-successful {
+  background: #ffffff;
+  box-shadow: 0px 4.00734px 40.0734px rgba(23, 31, 70, 0.16);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+.button-home {
+  background-color: #f7931e;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.thank-you {
+  color: #64748b;
+  text-align: center;
+}
+.item-name {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #183b56;
+  margin-left: 10px;
+}
+.order-total {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #3e4c59;
+}
+.head-place {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #475569;
+}
+.final-quantity {
+  display: flex;
+  width: 44%;
+  justify-content: space-between;
+}
+.final-quantitys {
+  display: flex;
+  width: 44%;
+  justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+  .final-quantity {
+    flex-direction: column;
+  }
+  .mobile {
+    display: none;
+  }
+  .cart-fina {
+    display: none;
+  }
+  .quantity-two {
+    margin: 2px;
+  }
+  .quantity {
+    margin-left: 10px;
+  }
+  .place-order {
+    font-weight: normal;
+    margin-left: 58%;
+  }
+  .item-name {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #183b56;
+  }
+  .image-small {
+    height: 250px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .mobile-two {
+    display: none;
+  }
+}
+.cart-height {
+  min-height: 100vh;
+}

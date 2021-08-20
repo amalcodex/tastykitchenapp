@@ -1,0 +1,23 @@
+.add-button-details {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ffa412;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #ffa412;
+  padding: 8px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+}
+.add-button-second {
+  display: flex;
+  align-items: center;
+}
+.add-button-two {
+  border: none;
+  margin: 5px;
+  background-color: transparent;
+  display: flex;
+}
